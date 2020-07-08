@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webinar Regestration</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body class="back">
+        <div>
+            <p class="det">Webinar on "Introduction to MITRE ATT&CK framework" - Samgacchadhwam Series webinar 14</p>
+            <ul style="list-style-type:none;">
+            <div class="list">    
+            <li>Date/s: 24 Jun 2020</li>
+
+            <li> Partners: Center of Excellence in Cyber Security, GoK</li>
+                
+                
+                <li>CySecK – as part of Samgacchadhwam series of webinars – is conducting a free webinar for students / faculty / working professionals on the topic “Introduction to MITRE ATT&CK framework”. This webinar will be conducted by Mr. Kirtar Oza.</li>
+                
+            <li>Registration link: https://meeting.zoho.in/meeting/register?sessionId=1387930063</li>
+                
+        <li> Date : 24th June 2020</li>
+                
+        <li>  Time : 5:00 to 6:30 pm</li>
+    </div> 
+           
+        <div class="listview">        
+        <li>Abstract: </li>
+
+        <li>  Creating Visibility is one of the key aspects of any Cyber Defense program. Once the visibility is created, it is important to create the detection logic on top of the visibility that is created.</li>
+            
+    <li>    MITRE’s ATT&CK framework has been gaining a lot of popularity in the past few years and has become the de-facto standard for building cyber-threat-detection capabilities. ATT&CK is a global repository for various techniques seen in-the-wild by the adversaries/threat actors at each stage of the cyber-attack kill chain. With MITRE’s ATT&CK, we get more than 300 cyber-attack indicators that can be leveraged to build cyber-attack detection capabilities.</li>
+            
+<li> Before MITRE’s ATT&CK framework, “what to look for” was always been a challenge for the organizations as there was no single comprehensive source/framework that can be used to provide the direction to build the detection building programs.</li>
+            
+<li>    In this webinar, we will look at an overview of the ATT&CK framework and discuss forward-path on how to put this framework into action.</li>
+            
+<li>   The session will be followed by Q&A and assessment test.</li>
+            
+<li>   Certificate of achievement will be given to those who clear the assessment test and certification of participation for those who attend.</li>
+            
+           
+    </div> 
+        </div>
+        <div class="form-container">
+            <form name="frmContact" id="" frmContact="" method="post"
+                action="" enctype="multipart/form-data"
+                onsubmit="return validateContactForm()">
+    
+                <div class="input-row">
+                    <label style="padding-top: 20px;">Name</label> <span
+                        id="userName-info" class="info"></span><br /> <input
+                        type="text" class="input-field" name="userName"
+                        id="userName" />
+                </div>
+                <div class="input-row">
+                    <label>Email</label> <span id="userEmail-info"
+                        class="info"></span><br /> <input type="text"
+                        class="input-field" name="userEmail" id="userEmail" />
+                </div>
+                
+                <div>
+                    <input type="submit" name="Register" class="btn-submit"
+                        value="Register" />
+    
+                    <div id="statusMessage"> 
+                            <?php
+                            if (! empty($message)) {
+                                ?>
+                                <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                </div>
+            </form>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"
+            type="text/javascript"></script>
+        <script type="text/javascript">
+            function validateContactForm() {
+                var valid = true;
+    
+                $(".info").html("");
+                $(".input-field").css('border', '#e0dfdf 1px solid');
+                var userName = $("#userName").val();
+                var userEmail = $("#userEmail").val();
+                var subject = $("#subject").val();
+                var content = $("#content").val();
+                
+                if (userName == "") {
+                    $("#userName-info").html("Required.");
+                    $("#userName").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                if (userEmail == "") {
+                    $("#userEmail-info").html("Required.");
+                    $("#userEmail").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+                {
+                    $("#userEmail-info").html("Invalid Email Address.");
+                    $("#userEmail").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+    
+               
+                return valid;
+            }
+    </script>
+    </body>
+</html>

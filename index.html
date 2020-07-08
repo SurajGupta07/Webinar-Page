@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webinar</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+       
+        <link href="css/responsive.css" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+            
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <h1>Centre of Excellence in Cyber Security</h1>
+        <nav class="navbar">
+          <div class="brand-title">COE</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#webinar">Webinar</a></li>
+              <li><a href="#coe">CoE Events</a></li>
+              <li><a href="#careers">Careers</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="web" id="webinar">
+          <h2>LIST OF WEBINAR EVENTS</h2>
+            <div class="res">
+            <div class="imageview">
+              <img src="images/cyber.jpeg" alt="Cyber Seccurity">
+            </div>
+            <p class="textview">Webinar on "Cybersecurity for Power and Energy Infrastructure"- Samgacchadhwam Series webinar 15
+             </p>  
+            <p class="textviews">
+            The electrical power infrastructure – the Electric Grid – is an extremely large cyber-physical system of national importance. Unlike other cyber-physical systems, the sheer size and geographic scale of this system, reliability concerns, and it’s status as a public utility pose some unique challenges in system security. While the system contains a lot of legacy equipment, recent trends in renewable energy deployment, electric vehicle uptake and evolution of electric loads (microgrids) pose cyber-security challenges that are yet to be understood. 
+           </p>
+           <a href="details.html" class="details"> View More</a>
+          </div>
+
+          <div>
+            <div class="imageview">
+              <img src="images/cyber3.jpeg" alt="Cyber Seccurity">
+            </div>
+            <p class="textview">Webinar on "Malware trends and analysis" - Samgacchadhwam Series webinar 16
+             </p>  
+            <p class="textviews">
+              The electrical power infrastructure – the Electric Grid – is an extremely large cyber-physical system of national importance. Unlike other cyber-physical systems, the sheer size and geographic scale of this system, reliability concerns, and it’s status as a public utility pose some unique challenges in system security.            
+            </p>
+          
+              <a href="details.html" class="details"> View More</a>
+          </div>
+
+
+          <div class="res">
+            <div class="imageview">
+              <img src="images/cyber2.jpeg" alt="Cyber Seccurity">
+            </div>
+            <p class="textview">Webinar on "Introduction to MITRE ATT&CK framework" - Samgacchadhwam Series webinar 14
+             </p>  
+            <p class="textviews">
+              MITRE’s ATT&CK framework has been gaining a lot of popularity in the past few years and has become the de-facto standard for building cyber-threat-detection capabilities. ATT&CK is a global repository for various techniques seen in-the-wild by the adversaries/threat actors at each stage of the cyber-attack kill chain. With MITRE’s ATT&CK, we get more than 300 cyber-attack indicators that can be leveraged to build cyber-attack detection capabilities.           
+              </p>
+              <a href="details.html" class="details"> View More</a>
+          </div>
+
+
+          <div class="res">
+            <div class="imageview">
+              <img src="images/cyber4.jpeg" alt="Cyber Seccurity">
+            </div>
+            <p class="textview">Webinar on "Security at the hardware level" - Samgacchadhwam Series webinar 13
+             </p>  
+            <p class="textviews">
+              This webinar will discuss security at the hardware level. We will talk about both the threat of compromised hardware, as well as security techniques that are made possible through trusted hardware.           
+             </p>
+              <a href="details.html" class="details"> View More</a>
+          </div>
+          
+        </div>
+
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+    </body>
+</html>
